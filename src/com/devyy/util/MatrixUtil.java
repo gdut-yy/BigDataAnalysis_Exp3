@@ -1,8 +1,14 @@
 package com.devyy.util;
 
+/** 
+ * 矩阵工具类，处理矩阵的相关运算 
+ * 
+ * @author ZYY
+ * 
+ */  
 public class MatrixUtil {
 	// 两个矩阵乘法运算
-	public static double[][] multiMatrix(double[][] a, double[][] b) {
+	public double[][] multiMatrix(double[][] a, double[][] b) {
 		if (a[0].length != b.length) {
 			System.out.println("矩阵无法相乘，请确定行列维度后再重试！");
 			return null;
@@ -24,7 +30,7 @@ public class MatrixUtil {
 	}
 
 	// 矩阵乘以一个实数
-	public static double[][] RealMulMatrix(double[][] a, double number) {
+	public double[][] RealMulMatrix(double[][] a, double number) {
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[0].length; j++) {
 				a[i][j] = number * a[i][j];
@@ -34,7 +40,7 @@ public class MatrixUtil {
 	}
 
 	// 矩阵加法运算
-	public static double[][] addMatrix(double[][] a, double[][] b) {
+	public double[][] addMatrix(double[][] a, double[][] b) {
 		if (a.length != b.length || a[0].length != b[0].length) {
 			System.out.println("矩阵无法相加，请确定行列维度后再重试！");
 			return null;

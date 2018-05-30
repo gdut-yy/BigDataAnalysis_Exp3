@@ -5,6 +5,13 @@ import java.util.Scanner;
 import com.devyy.bean.ENode;
 import com.devyy.bean.NextNode;
 
+/** 
+ * 构造节点，根据实验要求最简单的方式应该是构造二维数组来存放节点，即邻接矩阵的方式来存放有向图，但此类尝试使用邻接表的方式来存放该有向图降低空间复杂度。 
+ * 邻接矩阵的方式来存放有向图较简单，故此类中不实现。 
+ * 
+ * @author ZYY
+ * 
+ */  
 public class NodeUtil {
 	// 生成节点及节点之间的关系
 	public ENode[] createNode(int number) {
@@ -57,7 +64,7 @@ public class NodeUtil {
 				nextNode = nextNode.getNextNode();
 			}
 			node[i].setCount(count);
-			System.out.println(node[i].toString());
+//			System.out.println(node[i].toString());
 		}
 		return node;
 	}

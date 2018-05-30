@@ -19,9 +19,4 @@ public class NextNode {
 	public void setNextNode(NextNode nextNode) {
 		this.nextNode = nextNode;
 	}
-
-	@Override
-	public String toString() {
-		return "NextNode [nextLoc=" + nextLoc + ", nextNode=" + nextNode + "]";
-	}
 }

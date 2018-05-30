@@ -37,10 +37,4 @@ public class ENode {
 	public void setSubjectNode(boolean subjectNode) {
 		this.subjectNode = subjectNode;
 	}
-
-	@Override
-	public String toString() {
-		return "ENode [name=" + name + ", nextNode=" + nextNode + ", count=" + count + ", subjectNode=" + subjectNode
-				+ "]";
-	}
 }
